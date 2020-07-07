@@ -1,0 +1,452 @@
+@font-face{
+    font-family: 'titulo';
+    src: url(../font/FredokaOne-Regular.ttf);
+}
+@font-face{
+    font-family: 'texto';
+    src: url(../font/Mali-ExtraLightItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+                                                         /*BARRA SUPERIOR (LOGO TITULO Y SELECCION)*/
+#cabecera{
+    background-color:#3dc7c7;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: block;
+    font-family: 'titulo';
+    top:0;
+    left: 0;
+}
+    #empresa{
+        display: inline-block;
+        text-align:right;
+    }
+    #logotipo{
+        display: inline-block;
+        width: 50px;
+        margin-left:50px;
+        vertical-align: middle;
+    }
+    #nombre{
+        display: inline-block;
+        font-size: 3rem;
+        color: #fff;
+        vertical-align: middle;
+        margin-left: 30px;
+    }
+    #menu-ham{
+        display: none;
+    }
+    #abrir-ham, #cerrar-ham{
+        text-align: center;
+        min-width: 50px;
+        vertical-align: bottom;
+        display: none;
+    }
+    #menu-ham img{
+        width: 30px;
+        vertical-align: middle;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+    #menuPrincipal{
+        display: inline-block;
+        width: 70%;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    .opcion{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 30px;
+    }
+    .opcion:hover{
+        color: #000;
+    }
+    #seleccion{
+        color: #000;
+        font-size: 2rem;
+    }
+                                                        /*PARTE INFERIOR (COPYRIGTH AVISO DE PRIVACIDAD Y REDES SOCIALES)*/
+footer{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:#3dc7c7;
+}
+    .textoFooter{
+        width: 70%;
+        display: inline-block;
+        text-align: center;
+    }
+        .textoFooter h3, .textoFooter a{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 2rem;
+            margin: 0 20px;
+            vertical-align: middle;
+        }
+        .textoFooter a:hover{
+            color: #000;
+        }
+    .redesSociales{
+        width: 25%;
+        display: inline-block;
+    }
+        .redesSociales img{
+            width: 40px;
+            margin: 0 10px; 
+            vertical-align: middle;
+            display: inline-block;
+        }
+                                                            /*CODIGO DE LA PESTAÑA DE INICIAR SESIÓN*/
+#botonRegresar{
+    display: inline-block;
+    width: auto;
+    position: fixed;
+    margin-top: -25px;
+    margin-left: 10%;
+    text-decoration: none;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color:#3dc7c7;
+    color: #fff;
+}
+#titulo{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'titulo';
+    margin-top: 90px;
+}
+.contenedorInicio{
+    width: 30%;
+    margin-left: 35%;
+    height: auto;
+    background-color:#3dc7c7;
+    border: 1px solid #000;
+    margin-top: 30px;
+}
+        .contenedorInicio label{
+            margin-left: 10%;
+            font-size: 2rem;
+            color: #000;
+            display: block;
+            margin-top: 20px;
+        }
+        .contenedorInicio input{
+            display: block;
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 10px;
+        }
+        .contenedorInicio a{
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 2rem;
+            padding-bottom: 20px;
+            width: auto;
+        }
+        #botonIniciar{
+            margin-top: 20px;
+            border: 0.5px solid #333;
+            background-color: rgb(194, 192, 192);
+            color: #000;
+            border-radius: 5px;
+            width: auto;
+            width: 40%;
+            margin-left: 30%;
+            text-decoration: none;
+            padding-bottom: 0;
+        }
+        #botonIniciar:active{
+            background-color: rgb(100, 100, 100);
+        }
+        .contenedorInicio h4{
+            margin-top: 40px;
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        #espacioRegistrarte{
+            margin: 0 auto;
+            width: 20%;
+        }
+
+
+                                                        /*CODIGO DE LAS TARJETAS DE PROYECTOS*/
+     #quienes{
+         background-color:silver;
+         height:600px;
+     }
+     #proyectos a{
+        font-size:1.3rem;
+        text-decoration:none;
+        display:block;
+        background-color:#127681;
+        width:120px;
+        padding:10px;
+        border-radius:5px;
+        color:#fff;
+        text-align:center;
+        border:1px solid #10375c;
+    }
+     #proyectos{
+        text-align: left;
+     
+     }
+     #proyectos h1{
+         font-size:3.5rem;
+         color:rgb(47, 155, 226);
+         padding-bottom:10px;
+         text-align: center;
+     }
+     .proy{
+         width:20%;
+         border:1px solid #ccc;
+         text-align: center;
+         border-radius:5px;
+         display: inline-block;
+         overflow: hidden;
+     }
+     .proy:hover{
+         box-shadow:0px 0px 5px #999;
+     }
+     .separar-izq{
+         margin-left:3%;
+     }
+     
+     .separar-der{
+         margin-right:3%;
+     }
+     
+     .proy img{
+         width:100%;
+         height:120px;
+     }
+     .proy h3{
+     font-size:1.3rem;
+     padding:20px 0px 10px 0px;
+     }
+     
+     .proy p{
+         font-size:1rem;
+         padding:10px 20px;
+         line-height:1.5rem;
+     }
+     
+     #proyectos a{
+         font-size:1.rem;
+         width: 150px;
+         padding:5px;
+         margin: 0 auto;
+         margin-bottom:20px;
+     }
+                                                                     /*  CODIGO DEL CARRUSEL */
+        #divpadre
+        {
+            padding:50px;
+        }
+        
+            #slider {
+                margin: 0 auto;
+                width: 800px;
+                max-width: 100%;
+                text-align: center;
+             }
+
+             #slider input[type=radio] {
+                display: none;
+             }
+             #slider label {
+                cursor:pointer;
+                text-decoration: none;
+             }
+             #slides {
+                padding: 10px;
+                border: 3px solid #ccc;
+                background: #fff;
+                position: relative;
+                z-index: 1;
+             }
+             #overflow {
+                width: 100%;
+                overflow: hidden;
+             }
+             #slide1:checked ~ #slides .inner {
+                margin-left: 0;
+             }
+             #slide2:checked ~ #slides .inner {
+                margin-left: -100%;
+             }
+             #slide3:checked ~ #slides .inner {
+                margin-left: -200%;
+             }
+             #slide4:checked ~ #slides .inner {
+                margin-left: -300%;
+             }
+             #slides .inner {
+                transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+                width: 400%;
+                line-height: 0;
+                height: 300px;
+             }
+             #slides .slide {
+                width: 25%;
+                float:left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: #fff;
+             }
+             #slides .slide_1 {
+                background: #00171F;
+             }
+             #slides .slide_2 {
+                background: #003459;
+             }
+             #slides .slide_3 {
+                background: #007EA7;
+             }
+             #slides .slide_4 {
+                background: #00A8E8;
+             }
+             #controls {
+                margin: -180px 0 0 0;
+                width: 100%;
+                height: 50px;
+                z-index: 3;
+                position: relative;
+             }
+             #controls label {
+                transition: opacity 0.2s ease-out;
+                display: none;
+                width: 50px;
+                height: 50px;
+                opacity: .4;
+             }
+             #controls label:hover {
+                opacity: 1;
+             }
+             #slide1:checked ~ #controls label:nth-child(2),
+             #slide2:checked ~ #controls label:nth-child(3),
+             #slide3:checked ~ #controls label:nth-child(4),
+             #slide4:checked ~ #controls label:nth-child(1) {
+                background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+                float:right;
+                margin: 0 -50px 0 0;
+                display: block;
+             }
+             #slide1:checked ~ #controls label:nth-last-child(4),
+             #slide2:checked ~ #controls label:nth-last-child(4),
+             #slide3:checked ~ #controls label:nth-last-child(3),
+             #slide4:checked ~ #controls label:nth-last-child(2) {
+                background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+                float:left;
+                margin: 0 0 0 -50px;
+                display: block;
+             }
+             #bullets {
+                margin: 150px 0 0;
+                text-align: center;
+             }
+             #bullets label {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius:100%;
+                background: #ccc;
+                margin: 0 10px;
+             }
+             #slide1:checked ~ #bullets label:nth-child(1),
+             #slide2:checked ~ #bullets label:nth-child(2),
+             #slide3:checked ~ #bullets label:nth-child(3),
+             #slide4:checked ~ #bullets label:nth-child(4) {
+                background: #444;
+             }
+             @media screen and (max-width: 900px) {
+                #slide1:checked ~ #controls label:nth-child(2),
+                #slide2:checked ~ #controls label:nth-child(3),
+                #slide3:checked ~ #controls label:nth-child(4),
+                #slide4:checked ~ #controls label:nth-child(1),
+                #slide1:checked ~ #controls label:nth-last-child(2),
+                #slide2:checked ~ #controls label:nth-last-child(3),
+                #slide3:checked ~ #controls label:nth-last-child(4),
+                #slide4:checked ~ #controls label:nth-last-child(1) {
+                   margin: 0;
+                }
+                #slides {
+                   max-width: calc(100% - 140px);
+                   margin: 0 auto;
+                }
+             }
+                                                                                       /*CODIGO DE REGISTRO*/
+.contenedorRegistro{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+    .contenedorRegistro label{
+        display: inline-block;
+        width: 35%;
+        margin-left: 10%;
+        padding: 10px;
+        text-align: left;
+        font-size: 2rem;
+    }
+    .contenedorRegistro input{
+        display: inline-block;
+        width: 35%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        padding: 3px;
+    }
+    .contenedorRegistro #tituloDomicilio{
+        font-size: 4rem;
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        border-top: 1px solid #000;
+    }
+    .contenedorRegistro .letraRegistro{
+        width: 25%;
+        margin-left: 8%;
+    }
+    .contenedorRegistro .botonRegistro{
+        width: 25%;
+        margin-left: 8%;
+    }
+    #cuadroComentarios{
+        display: block;
+        margin-left: 8%;
+    }
+    .contenedorRegistro a{
+        width: 20%;
+        margin-left: 75%;
+        text-decoration: none;
+        padding: 0 5px;
+        border-radius: 5px;
+        background-color: rgb(194, 192, 192);
+        border: 1px solid #000;
+        color: #000;
+    }
+    .contenedorRegistro a:active{
+        background-color: #333;
+    }

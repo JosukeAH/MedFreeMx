@@ -1,0 +1,18 @@
+@media screen and (max-width:992px){
+    #nombre{
+        font-size: 2.5rem;
+    }
+    .textoFooter h3{
+        display: block;
+    }
+    .redesSociales img{
+        width: 35px;
+        margin: 0 5px;
+        margin-top: -20px;
+    }
+    #botonIniciar{
+        font-size: 2rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+}

@@ -1,0 +1,85 @@
+@media screen and (max-width:800px){
+   
+    #botonIniciar{
+        font-size: 1.75rem;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+                                                                /* Aqui es puro codigo reutilizado*/
+    #empresa{
+        width: 50%;
+    }
+    #nombre{
+        margin-left: 15px;
+        position: relative;
+        top: 5px;
+    }
+    #logotipo{
+        margin-left: 30px;
+        position: relative;
+        top: 5px;
+    }
+    #menuPrincipal{
+        height: 0px;
+        width: 80%;
+        overflow: hidden;
+    }
+    #cabecera:target #abrir-ham{
+        display: none;
+    }
+    #cabecera:target #cerrar-ham{
+        display: inline-block;
+    }
+    #cabecera:target #menuPrincipal{
+        height: 150px;
+        transition: 1s;
+    }
+    .opcion{
+        display: block;
+        text-align: left;
+        margin-top: 13px;
+        font-size: 1.75rem;
+        border-bottom: 1px solid #fff;
+        width: 50%;
+    }
+    #menu-ham{
+        width: 45%;
+        min-width: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        position: relative;
+        top: 5px;
+    }
+    #abrir-ham{
+        display: inline-block;
+    }
+    .textoFooter h3{
+        display: block;
+    }
+    .textoFooter h3, .textoFooter a{
+        font-size: 2rem;
+    }
+    .redesSociales img{
+        width: 30px;
+        margin: 0 5px;
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width:670px){
+    .redesSociales{
+        width: 37%;
+    }
+    .redesSociales img{
+        width: 25px;
+        margin-top: -30px;
+    }
+    .textoFooter{
+        width: 60%;
+    }
+    .textoFooter h3, .textoFooter a{
+        font-size: 1.5rem;
+    }
+}
